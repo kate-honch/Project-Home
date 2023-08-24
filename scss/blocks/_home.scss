@@ -1,0 +1,185 @@
+.home {
+    margin: 40px 0 100px;
+
+    &__container {
+        position: relative;
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 34px;
+            color: #BDBDBD;
+            font-family: TT Hoves;
+
+            span {
+                display: block;
+                color: #333;
+                font-family: TT Hoves;
+                font-weight: 700;
+            }
+        }
+    }
+
+    &__slider {
+        overflow: hidden;
+
+        &--btns {
+            margin-bottom: 20px;
+
+            button {
+                width: 35px;
+                height: 35px;
+                border: 1px solid #F2F2F2;
+                background: #F9F9F9;
+
+                img {
+                    width: 20px;
+                }
+
+                &:first-child {
+                    margin-right: 15px;
+                }
+
+                &:hover {
+                    background-color: #e5e5e5;
+                }
+            }
+        }
+    }
+
+    &__number {
+        margin-bottom: 20px;
+        color: #BDBDBD;
+        font-family: TT Hoves;
+        font-size: 18px;
+
+        &--current {
+            margin-right: 26px;
+        }
+
+        &--all {
+            margin-left: 32px;
+        }
+    }
+
+    &__slides {
+        position: relative;
+        display: flex;
+        transition: 1s;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__show {
+        position: absolute;
+        top: 518px;
+    }
+}
+
+@media(min-width: 768px) {
+    .home {
+        &__container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    
+            h1 {
+                margin-bottom: 60px;
+                font-size: 40px;
+            }
+        }
+    
+        &__slider {
+            width: 481px;
+            overflow: hidden;
+        }
+    
+        &__number {
+            margin-bottom: 20px;
+            color: #BDBDBD;
+            font-family: TT Hoves;
+            font-size: 18px;
+            
+        }
+    
+        &__slides {
+            position: relative;
+            display: flex;
+            transition: 1s;
+    
+            img {
+                width: 100%;
+            }
+        }
+    
+        &__show {
+            position: absolute;
+            top: 458px;
+        }
+    }
+}
+
+@media(min-width: 1440px) {
+    .home {
+        margin: 0 0 120px;
+
+        &__container {
+            h1 {
+                margin-bottom: 90px;
+                font-size: 64px;
+                font-weight: 300;
+                line-height: 64px;
+
+                span {
+                    font-weight: 700;
+                }
+            }
+        }
+    
+        &__slider {
+            width: 770px;
+            height: 829px;
+            overflow: hidden;
+
+            &--btns {
+                margin-bottom: 90px;
+
+                button {
+                    width: 53px;
+                    height: 53px;
+
+                    &:first-child {
+                        margin-right: 23px;
+                    }
+
+                    img {
+                        width: 24px;
+                    }
+                }
+            }
+        }
+    
+        &__number {
+            margin-bottom: 0;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+    
+        &__slides {
+            position: relative;
+            display: flex;
+            transition: 1s;
+    
+            img {
+                width: 100%;
+            }
+        }
+    
+        &__show {
+            position: absolute;
+            top: 758px;
+        }
+    }
+}

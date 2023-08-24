@@ -1,0 +1,207 @@
+.footer {
+    background: #2C2C2C;
+
+    &__container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 350px;
+        margin: 0 auto;
+        padding: 65px 0;
+        font-family: TT Hoves;
+        color: #FFF;
+        border-bottom: 1px solid rgb(255 255 255 / 19%);
+
+    }
+
+    &__logo {
+        position: absolute;
+        top: 10px;
+        display: block;
+        width: 50px;
+        height: 50px;
+        filter: invert(1);
+    }
+
+    &__block {
+        h4 {
+            margin-bottom: 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        li {
+            margin-bottom: 10px;
+
+            a {
+                text-decoration: none;
+                color: #FFF;
+                transition: 0.5s;
+
+                &:hover {
+                    color: #70aad7;
+                }
+
+                &:active {
+                    color: #2f70a1;
+                }
+            }
+        }
+
+        &--contacts {
+            width: 200px;
+        }
+
+        &--social {
+            margin-top: 20px;
+
+            img {
+                margin-right: 15px;
+                width: 25px;
+                height: 25px;
+                filter: invert(1);
+                transition: 0.5s;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    &__item {
+        display: flex;
+
+        img {
+            width: 15px;
+            height: 15px;
+            margin-right: 10px;
+            filter: invert(1);
+        }
+    }
+
+    &__bottom {
+        padding: 20px 0;
+        font-family: Open Sans;
+        font-size: 12px;
+        font-weight: 400;
+        text-align: center;
+        line-height: 22px;
+        color: rgba(200, 200, 200, 0.50);
+    }
+}
+
+@media(min-width: 768px) {
+    .footer {
+        &__container {
+            width: 740px;
+            margin: 0 auto;
+            padding: 65px 0 45px;
+        }
+    
+        &__logo {
+            position: absolute;
+            top: 10px;
+            display: block;
+            width: 50px;
+            height: 50px;
+            filter: invert(1);
+        }
+    
+        &__block {
+            h4 {
+                margin-bottom: 20px;
+                font-size: 14px;
+                font-weight: 700;
+            }
+    
+            li {
+                margin-bottom: 20px;
+            }
+    
+            &--contacts {
+                width: 200px;
+            }
+    
+            &--social {
+                margin-top: 0;
+    
+                img {
+                    margin-right: 15px;
+                    width: 25px;
+                    height: 25px;
+                    filter: invert(1);
+                    transition: 0.5s;
+    
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    
+        &__item {
+            display: flex;
+    
+            img {
+                width: 15px;
+                height: 15px;
+                margin-right: 10px;
+                filter: invert(1);
+            }
+        }
+    
+        &__bottom {
+            padding: 20px 0;
+            font-family: Open Sans;
+            font-size: 12px;
+            font-weight: 400;
+            text-align: center;
+            line-height: 22px;
+            color: rgba(200, 200, 200, 0.50);
+        }
+    }
+}
+
+@media(min-width: 1440px) {
+    .footer {
+        &__container {
+            width: 1170px;
+            padding: 58px 0 60px;
+        }
+
+        &__logo {
+            position: static;
+            width: 145px;
+            height: 94px;
+        }
+
+        &__block {
+            h4 {
+                margin-bottom: 25px;
+                font-size: 16px;
+            }
+
+            li {
+                margin-bottom: 16px;
+            }
+    
+            &--contacts {
+                width: 250px;
+
+                li {
+                    margin-bottom: 32px;
+
+                    &:last-of-type {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        &__bottom {
+            padding: 24px 0;
+        }
+    }
+}

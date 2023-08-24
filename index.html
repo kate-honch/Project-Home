@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <title>Digital project</title>
+    <script defer async src="./index.js"></script>
+</head>
+<body>
+    <header class="header">
+        <img class="header__logo" src="./images/logo.svg" alt="logo">
+
+        <img class="header__menu" src="./images/menu.svg" alt="menu">
+
+        <img class="header__menu--close" src="./images/close-menu.svg" alt="close menu">
+
+        <div class="header__menu--block">
+            <ul>
+                <li><a href="#">ГЛАВНАЯ</a></li>
+                <li><a href="#">ГАЛЕРЕЯ</a></li>
+                <li><a href="#">ПРОЕКТЫ</a></li>
+                <li><a href="#">СЕРТИФИКАТЫ</a></li>
+                <li><a href="#">КОНТАКТЫ</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="main__home home">
+            <div class="home__container">
+                <div>
+                    <h1>PROJECT<span>HOME</span></h1>
+
+                    <div class="home__slider--btns">
+                        <button class="home__btn home__btn--prev">
+                            <img src="./images/home/arrow-left.svg" alt="arrow">
+                        </button>
+                        <button class="home__btn home__btn--next">
+                            <img src="./images/home/arrow-right.svg" alt="arrow">
+                        </button>
+                    </div>
+    
+                    <p class="home__number">
+                        <span class="home__number--current"></span>
+                        /
+                        <span class="home__number--all"></span>
+                    </p>
+                </div>
+
+                <div class="home__slider">
+                    <div class="home__slides">
+                        <img class="home__slide" src="./images/home/house1.png" alt="house">
+
+                        <img class="home__slide" src="./images/home/house2.jpg" alt="house">
+
+                        <img class="home__slide" src="./images/home/house3.jpg" alt="house">
+                    </div>
+
+                    <button class="home__show btn">ВЗГЛЯНУТЬ
+                        <img src="./images/home/arrow-right.svg" alt="arrow"> 
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="main__about about">
+            <div class="about__block">
+                <h2>О компании</h2>
+
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </p>
+
+                <button class="about__read btn">ЧИТАТЬ
+                    <img src="./images/home/arrow-right.svg" alt="arrow"> 
+                </button>
+            </div>
+
+            <div class="about__images">
+                <img src="./images/about/office1.png" alt="office">
+                <img src="./images/about/office2.png" alt="office">
+                <img src="./images/about/office3.png" alt="office">
+            </div>
+        </section>
+
+        <section class="main__tasks tasks">
+            <h2>Основные задачи</h2>
+
+            <div class="tasks__container">
+                <div class="tasks__block">
+                    <p class="tasks__block--num">1</p>
+                    <p class="tasks__block--text">Создание комфортных условий и повышение качества обслуживания клиентов</p>
+                </div>
+
+                <div class="tasks__block">
+                    <p class="tasks__block--num">2</p>
+                    <p class="tasks__block--text">Постоянно совершенствовать качество предоставляемых услуг путем обучения персонала, закупки нового оборудования и усиленной рекламы на рынке
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="main__projects projects">
+            <h2>Наши проекты</h2>
+
+            <div class="projects__container">
+                <div class="projects__block">
+                    <div class="projects__block--info">
+                        <p>ДОСУГОВЫЙ ЦЕНТР</p>
+
+                        <a class="projects__detail" href="#">ПОДРОБНЕЕ
+                            <img src="./images/home/arrow-right.svg" alt="arrow">
+                        </a>
+                    </div>
+
+                    <img class="projects__block--img" src="./images/projects/project1.png" alt="project">
+                </div>
+                <img class="projects__img" src="./images/projects/project2.png" alt="project">
+                <img class="projects__img" src="./images/projects/project3.png" alt="project">
+                <img class="projects__img" src="./images/projects/project4.png" alt="project">
+                <img class="projects__img" src="./images/projects/project5.png" alt="project">
+            </div>
+
+            <button class="projects__btn btn">ВСЕ ПРОЕКТЫ
+                <img src="./images/home/arrow-right.svg" alt="arrow"> 
+            </button>
+        </section>
+
+        <section class="main__connect connect">
+            <h2>Связаться с нами</h2>
+
+            <div class="connect__container">
+                <div class="connect__block">
+                    <form action="" method="post">
+                        <input type="text" name="name" placeholder="Имя">
+
+                        <label>
+                            <input class="form__input form__input--required" type="tel" name="phoneNumber"  required="required">
+                            <span placeholder="Номер телефона"></span>
+                        </label>
+
+                        <label>
+                            <input class="form__input form__input--required" type="email" name="email"  required="required">
+                            <span placeholder="Email"></span>
+                        </label>
+
+                        <input type="text" name="product" placeholder="Интересующий товар/услуга">
+
+                        <label class="textarea">
+                            <textarea name="message"  required="required"></textarea>
+                            <span placeholder="Сообщение"></span>
+                        </label>
+                    </form>
+
+                    <div class="connect__agreement">
+                        <input class="input__checkbox" id="agreement" name="agreement" type="checkbox">
+
+                        <label for="agreement">Отправляя заявку Вы соглашаетесь с политикой конфиденциальности
+                        </label>
+                    </div>
+
+                    <button class="connect__submit btn">ОТПРАВИТЬ
+                        <img src="./images/home/arrow-right.svg" alt="arrow">
+                    </button>
+                </div>
+            
+                <img class="connect__img" src="./images/connect.png" alt="connect">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__logo" src="./images/logo.svg" alt="logo">
+
+            <div class="footer__block">
+                <h4>Информация</h4>
+
+                <ul class="footer__list footer__list--info">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Галерея</a></li>
+                    <li><a href="#">Проекты</a></li>
+                    <li><a href="#">Сертификаты</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__block footer__block--contacts">
+                <h4>Контакты</h4>
+
+                <ul class="footer__list footer__list--contacts">
+                    <li class="footer__item footer__item--location">
+                        <img src="./images/footer/location.svg" alt="location">
+                        <a href="#">100000, Республика  Казахстан, г. Караганда, ул. Телевизионная 10</a>
+                    </li>
+                    <li class="footer__item footer__item--num">
+                        <img src="./images/footer/phone.svg" alt="phone">
+                        <a href="#">+38 (000) 000 00 00</a>
+                    </li>
+                    <li class="footer__item footer__item--mail">
+                        <img src="./images/footer/mail.svg" alt="mail">
+                        <a href="#">mail@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__block footer__block--social">
+                <h4>Социальные сети</h4>
+
+                <a href="#"><img src="./images/footer/facebook.svg" alt="facebook"></a>
+                <a href="#"><img src="./images/footer/twitter.svg" alt="twitter"></a>
+                <a href="#"><img src="./images/footer/linked-in.svg" alt="linked in"></a>
+                <a href="#"><img src="./images/footer/pinterest.svg" alt="pinterest"></a>
+            </div>
+        </div>
+        <p class="footer__bottom">© 2019 Digital Project. Все права защищены.</p>
+    </footer>
+</body>
+</html>
